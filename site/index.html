@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Word Games</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@400;500&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'Inter', sans-serif;
+      background: #FAFAF8;
+      color: #1A1A1A;
+      min-height: 100dvh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 4rem 1.5rem;
+    }
+    h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(2rem, 5vw, 3.5rem);
+      letter-spacing: -0.02em;
+      margin-bottom: 0.5rem;
+    }
+    .subtitle {
+      color: #888;
+      font-size: 1rem;
+      margin-bottom: 3rem;
+    }
+    .games {
+      display: grid;
+      gap: 1.5rem;
+      width: 100%;
+      max-width: 480px;
+    }
+    .game-card {
+      display: block;
+      text-decoration: none;
+      color: inherit;
+      background: #fff;
+      border: 2px solid #E8E8E4;
+      border-radius: 12px;
+      padding: 1.5rem 2rem;
+      transition: border-color 0.15s, box-shadow 0.15s;
+    }
+    .game-card:hover {
+      border-color: #1A1A1A;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+    }
+    .game-card h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.4rem;
+      margin-bottom: 0.4rem;
+    }
+    .game-card p {
+      color: #666;
+      font-size: 0.9rem;
+      line-height: 1.5;
+    }
+  </style>
+</head>
+<body>
+  <h1>Word Games</h1>
+  <p class="subtitle">A collection of browser-based word games</p>
+  <div class="games">
+    <a class="game-card" href="./letterpress/">
+      <h2>LetterPress</h2>
+      <p>A timed word-stacking challenge. Stamp letters onto a word to form new words before the queue overflows.</p>
+    </a>
+  </div>
+</body>
+</html>
