@@ -13,7 +13,7 @@ export function useLetterGenerator(
   graph: AdjacencyGraph,
   dispatch: React.Dispatch<GameAction>,
 ) {
-  const timeoutRef = useRef<ReturnType<typeof setTimeout>>();
+  const timeoutRef = useRef<ReturnType<typeof setTimeout>>(undefined);
   const recentPositionsRef = useRef<number[]>([]);
 
   useEffect(() => {
