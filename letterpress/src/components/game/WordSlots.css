@@ -1,0 +1,19 @@
+.word-slots {
+  display: flex;
+  gap: var(--tile-gap);
+  justify-content: center;
+}
+
+.word-slot {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+}
+
+.word-slot__number {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  color: var(--color-text-muted);
+  opacity: 0.6;
+}

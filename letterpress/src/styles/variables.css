@@ -1,0 +1,26 @@
+:root {
+  --color-bg: #fafaf8;
+  --color-surface: #ffffff;
+  --color-text: #1a1a1a;
+  --color-text-muted: #6b6b6b;
+  --color-accent: #2d2d2d;
+  --color-valid: #2e7d32;
+  --color-invalid: #c62828;
+  --color-combo: #e65100;
+  --color-timer: #1565c0;
+  --color-timer-low: #c62828;
+  --color-queue-bg: #f0f0ec;
+  --color-tile-border: #cccccc;
+  --color-tile-hover: #999999;
+  --color-selected: #4a90d9;
+
+  --font-display: 'Playfair Display', serif;
+  --font-mono: 'IBM Plex Mono', monospace;
+  --font-body: 'Inter', sans-serif;
+
+  --tile-size: clamp(48px, 12vw, 72px);
+  --tile-gap: 8px;
+  --border-radius: 4px;
+  --transition-fast: 150ms;
+  --transition-normal: 300ms;
+}

@@ -1,0 +1,53 @@
+.game-screen {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  animation: fadeIn 200ms ease-out;
+}
+
+.game-screen__header {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.game-screen__play-area {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+}
+
+.game-screen__word-container {
+  position: relative;
+}
+
+.game-screen__word-flash {
+  position: absolute;
+  top: -28px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-family: var(--font-mono);
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--color-valid);
+  animation: comboFlash 600ms ease-out forwards;
+  white-space: nowrap;
+}
+
+.game-screen__current-word {
+  font-family: var(--font-mono);
+  font-size: 13px;
+  color: var(--color-text-muted);
+  letter-spacing: 0.3em;
+  opacity: 0.4;
+  margin-top: 4px;
+}
+
+.game-screen__word-count {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  color: var(--color-text-muted);
+}

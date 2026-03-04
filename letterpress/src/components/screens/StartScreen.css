@@ -1,0 +1,104 @@
+.start-screen {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+  animation: fadeIn 400ms ease-out;
+}
+
+.start-screen__logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0;
+  line-height: 1;
+}
+
+.start-screen__title {
+  font-family: var(--font-display);
+  font-size: clamp(48px, 12vw, 72px);
+  font-weight: 900;
+  color: var(--color-text);
+  letter-spacing: -0.02em;
+  line-height: 0.9;
+}
+
+.start-screen__title--accent {
+  color: var(--color-accent);
+}
+
+.start-screen__tagline {
+  font-family: var(--font-mono);
+  font-size: 14px;
+  color: var(--color-text-muted);
+  letter-spacing: 0.05em;
+}
+
+.start-screen__instructions {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  max-width: 320px;
+}
+
+.start-screen__rule {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  font-size: 14px;
+  color: var(--color-text);
+  line-height: 1.4;
+}
+
+.start-screen__rule-num {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--color-text-muted);
+  background: var(--color-queue-bg);
+  width: 24px;
+  height: 24px;
+  min-width: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+
+.start-screen__play {
+  font-family: var(--font-mono);
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+  padding: 16px 48px;
+  background: var(--color-text);
+  color: var(--color-bg);
+  border: 2px solid var(--color-text);
+  border-radius: var(--border-radius);
+  transition: all var(--transition-fast);
+}
+
+.start-screen__play:hover {
+  background: transparent;
+  color: var(--color-text);
+}
+
+.start-screen__play:active {
+  transform: scale(0.97);
+}
+
+.start-screen__hint {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  color: var(--color-text-muted);
+  opacity: 0.6;
+}
+
+.start-screen__hint kbd {
+  font-family: var(--font-mono);
+  padding: 1px 5px;
+  border: 1px solid var(--color-tile-border);
+  border-radius: 3px;
+  background: var(--color-queue-bg);
+  font-size: 11px;
+}

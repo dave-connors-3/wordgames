@@ -1,0 +1,21 @@
+.combo-flash {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  animation: comboFlash 800ms ease-out forwards;
+  pointer-events: none;
+}
+
+.combo-flash__points {
+  font-family: var(--font-mono);
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--color-valid);
+}
+
+.combo-flash__multiplier {
+  font-family: var(--font-mono);
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--color-combo);
+}

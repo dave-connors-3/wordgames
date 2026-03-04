@@ -1,0 +1,21 @@
+.score-display {
+  display: flex;
+  align-items: baseline;
+  gap: 12px;
+}
+
+.score-display__score {
+  font-family: var(--font-mono);
+  font-size: clamp(24px, 6vw, 36px);
+  font-weight: 700;
+  color: var(--color-text);
+  line-height: 1;
+}
+
+.score-display__combo {
+  font-family: var(--font-mono);
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--color-combo);
+  animation: comboFlash 800ms ease-out;
+}
